@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+body {
+    position: relative;
+    background-color: whitesmoke; /* Background color behind the image */
+    margin: 0; /* Ensure the image fills the entire screen without margins */
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw;  /* 100% of the viewport width */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/childrens_reading.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Opacity only on the image */
+    z-index: -1; /* Ensures it is behind the content */
+}
+
+body h1{
+    text-align: center;
+    color: blueviolet;
+    text-decoration: underline;
+}
+main{
+    text-align: center;
+    width: 100%;
+    /* justify-content: center; */
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.left{
+    /* box-sizing: border-box; */
+    border-radius: 10px solid green;
+    height: 50vh;
+    display: flex;
+    /* width: 50%; */
+    margin-right: 50px;
+    justify-content: space-around;
+    flex-direction: row;
+    color: aliceblue;
+}
+.left .box{
+    border: 2px solid red;
+    background-color: green;
+    height: 50vh;
+    width: 150px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    box-sizing: content-box;
+}
+
+.right{
+    margin-top: 40px;
+}
+.right button{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 40%;
+    margin-left: 40px;
+}
+.right button:hover{
+    background-color: aliceblue;
+}
+.btn1{
+    background-color: pink;
+}
+.btn2{
+    background-color: purple;
+}
+.btn3{
+    background-color: blue;
+}
+.btn4{
+    background-color: red;
+}
+.btn5{
+    background-color: yellow;
+}
+.btn6{
+    background-color: green;
+}
+#btn7, #btn8{
+    margin: 15px;
+    height: 3rem;
+    border-radius: 10%;
+}
+#btn7:hover, #btn8:hover{
+    background-color: rgb(94, 87, 78);
+}
